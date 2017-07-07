@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Val & Chris</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Playfair+Display:400,400i,700,900i" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "10") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 200, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  </head>
+
+  <body>
+    <nav class="nav navbar-default">
+      <div class="container">
+
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">V&C</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#our-adventure">Our Adventure</a></li>
+            <li><a href="#">Event Details</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Send a Note</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="hero-section">
+      <div class="hero-box">
+        <h1 class="hero-header top-30">Val & Chris</h1>
+        <img class ="hero-branch top-30" src="branch-hero.png" alt="beautiful little clipart branch" />
+        <h3 class="hero-date top-30">June 30, 2018</h3>
+        <h4 class="hero-info">at Bedford Village Inn</h4>
+      </div>
+    </div>
+
+
+
+
+    <div class="section section-one container" id="our-adventure">
+      <div class="row">
+        <div class="col-sm-5" id="section-one-text">
+          <h2>Section One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit perspiciatis odio at, vero aliquam suscipit, a delectus eum corrupti eligendi porro ea, explicabo itaque. Totam voluptates fugit, ex sed.</p>
+        </div>
+        <div class="col-sm-7">
+          <img src="travis.png" alt="Adorable photo of the bride and groom to-be" id="section-one-photo" />
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section section-two">
+        <img class="background-flowers pull-left" src="flower-1.png" alt="super beautiful flower number one">
+        <img class="background-flowers pull-right top-80" src="leaves-1.png" alt="super beautiful leaves part one!">
+
+      <div class="container col-sm-5 col-centered">
+        <h2 class="top-30">Section Two</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ducimus facilis odit omnis reiciendis dignissimos, ullam. Tempora corporis nihil repellendus architecto ducimus consequatur repellat, accusamus dicta impedit aut nostrum dolorem?</p>
+      </div>
+    </div>
+
+
+    <div class="section section-three container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="section-photo" src="travis.png">
+        </div>
+        <div class="col-sm-6">
+          <h2>Section Three</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam cum provident nisi fugiat. Alias cumque, ipsa, voluptatibus culpa quidem voluptate quam libero quasi a, ut expedita. Blanditiis corporis cupiditate natus.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section section-four container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Section Four</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus tempora ut ullam! Molestiae, veniam odio dolore! Est temporibus quis harum, illo ducimus, qui fugit, rerum iure assumenda saepe recusandae.</p>
+        </div>
+        <div class="col-sm-6">
+          <img class="section-photo" src="travis.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="finale container">
+      <div class="section">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" src="travis.png" alt="lovely story telling!">
+          </div>
+          <div class="col-sm-4">
+            <h1 class="adventure-header">Duis mollis, est non com modo luctus, nisi erat.</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" id="finale-photo-left" src="travis.png" alt="more lovely story telling!">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" id="finale-photo-right" src="travis.png" alt="even more lovely story telling!">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
