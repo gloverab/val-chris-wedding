@@ -99,7 +99,7 @@ h1 {
   top: 50%;
   left: 50%;
   width: 65%;
-  height: 55%;
+  height: 60%;
   border: 1px solid white;
   background-color: rgba(0, 80, 10, 0.45);
   box-shadow: 0px 0px 0px 10px rgba(0, 80, 10, 0.45);
@@ -152,7 +152,7 @@ h1 {
 /*SECTION ONE STYLES*/
 
 #section-one-photo {
-  margin-top: -70px;
+  margin-top: -50px;
   width: 90%;
   box-shadow: 5px 5px 200px;
 }
@@ -195,6 +195,73 @@ h1 {
   margin-left: -40px;
   box-shadow: 1px 1px 1px;
 }
+
+
+
+/*EVENT DETAILS STYLES*/
+
+#event-details {
+  margin-top: 40px;
+}
+
+.details-leaves {
+  width: 40%;
+  right: 0;
+  position: static;
+}
+
+.section-header {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.event-box {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -50%;
+  width: 80%;
+  background-color: white;
+  box-shadow: 50px 50px 50px;
+}
+
+.event-box p {
+  color: #7d7d7d;
+  font-size: 1.175em;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.event-box a {
+  font-size: 1.3em;
+  padding: 18px 36px;
+  border-radius: 4px;
+  background-color: #2E5C00;
+  color: white;
+}
+
+.event-box-header {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 1.6em;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #EEF9EB;
+  color: #2E5C00;
+  margin-bottom: 40px;
+}
+
+.event-box-sm-header {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 
 
 @media (max-width: 767px) {
