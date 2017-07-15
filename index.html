@@ -13,21 +13,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Playfair+Display:400,400i,700,900i" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "10") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 200, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-  </script>
+
+  <script src="index.js"></script>
   </head>
 
   <body>
@@ -68,11 +55,11 @@
     <div class="section section-one container" id="our-adventure">
       <div class="row">
         <div class="col-sm-5" id="section-one-text">
-          <h2>Section One</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit perspiciatis odio at, vero aliquam suscipit, a delectus eum corrupti eligendi porro ea, explicabo itaque. Totam voluptates fugit, ex sed.</p>
+          <h2>The day we met</h2>
+          <p>We were both living and working in the Worcester area during the summer of 2009. Hanging out at a hookah bar downtown, surrounded by our closest friends, we met and hit it off real nice.</p>
         </div>
         <div class="col-sm-7">
-          <img src="travis.png" alt="Adorable photo of the bride and groom to-be" id="section-one-photo" />
+          <img src="adventure-pic-lg.png" alt="Adorable photo of the bride and groom to-be" id="section-one-photo" />
         </div>
       </div>
     </div>
@@ -84,8 +71,9 @@
         <img class="background-flowers pull-right top-80" src="leaves-1.png" alt="super beautiful leaves part one!">
 
       <div class="container col-sm-5 col-centered">
-        <h2 class="top-30">Section Two</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ducimus facilis odit omnis reiciendis dignissimos, ullam. Tempora corporis nihil repellendus architecto ducimus consequatur repellat, accusamus dicta impedit aut nostrum dolorem?</p>
+        <h2 class="top-30">Our family grows</h2>
+        <p>Fast forward four years. During the summer of 2013 we adopted our beautiful, pup Zoe.</p>
+        <p>Honestly, we don’t remember what life was like before rescuing her, so we had to fast forward to this part in the bio. We made it here and it’s awesome, so that’s real nice!</p>
       </div>
     </div>
 
@@ -93,11 +81,11 @@
     <div class="section section-three container">
       <div class="row">
         <div class="col-sm-6">
-          <img class="section-photo" src="travis.png">
+          <img class="section-photo" src="house-pic.png">
         </div>
         <div class="col-sm-6">
-          <h2>Section Three</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam cum provident nisi fugiat. Alias cumque, ipsa, voluptatibus culpa quidem voluptate quam libero quasi a, ut expedita. Blanditiis corporis cupiditate natus.</p>
+          <h2>We bought a house</h2>
+          <p>After nearly four years of renting apartments together, we  purchased a condo in Watertown, Massachusetts, complete with a backyard for Zoe and her friends to run around. It’s really nice, you should come visit sometime.</p>
         </div>
       </div>
     </div>
@@ -106,11 +94,12 @@
     <div class="section section-four container">
       <div class="row">
         <div class="col-sm-6">
-          <h2>Section Four</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus tempora ut ullam! Molestiae, veniam odio dolore! Est temporibus quis harum, illo ducimus, qui fugit, rerum iure assumenda saepe recusandae.</p>
+          <h2>Time to celebrate</h2>
+          <p>Ok. You now know  enough info to discuss amongst yourselves. On to the next chapter of our lives. We are so excited to celebrate our big day with our closest family and friends.</p>
+          <p>Let's make it real nice!</p>
         </div>
         <div class="col-sm-6">
-          <img class="section-photo" src="travis.png">
+          <img class="section-photo" src="celebrate-pic.png">
         </div>
       </div>
     </div>
@@ -125,7 +114,7 @@
             <img class="finale-photo" src="travis.png" alt="lovely story telling!">
           </div>
           <div class="col-sm-4">
-            <h1 class="adventure-header">Duis mollis, est non com modo luctus, nisi erat.</h1>
+            <h1 class="adventure-header">Your love will be safe with me.</h1>
           </div>
         </div>
 
@@ -147,7 +136,7 @@
       <img class="details-leaves pull-right" src="leaves-2.png" alt="more pretty leaves!">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7 text-center">
+          <div class="col-sm-6">
             <h1 class="section-header">Event Details</h1>
             <p>Nullam quis risus eget urna mollis orvena vel eu leo. Cras justo oido, da publica ac facsia in, egestas eget quam.</p>
           </div>
@@ -160,6 +149,7 @@
               <h4 class="event-box-sm-header">Bedford Village Inn</h4>
               <p>2 Olde Bedford Way<br />
               Bedford, NH 03110</p>
+              <a href="/" id="brule">Check it out »</a>
             </div>
           </div>
 
@@ -168,13 +158,103 @@
               <h2 class="event-box-header">Where to Stay</h2>
               <h4 class="event-box-sm-header no-margin-bottom">The Grand</h4>
               <p>at Bedford Village Inn</p>
-              <a href="#" target="blank">Book your room</a>
+              <a href="#" target="blank" class="custom-btn">Book your room</a>
+              <p class="top-30">Use code VALCHRIS for 20% off</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
+
+    <div class="double-finale container">
+      <div class="section">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" src="travis.png" alt="lovely story telling!">
+          </div>
+          <div class="col-sm-4">
+            <h1 class="adventure-header">Your love will be safe with me.</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" id="finale-photo-left" src="travis.png" alt="more lovely story telling!">
+          </div>
+          <div class="col-sm-5">
+            <img class="finale-photo" id="finale-photo-right" src="travis.png" alt="even more lovely story telling!">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="registry" class="section container text-center top-40">
+        <h1 class="section-header">Registry</h1>
+        <p>It's kind of like our birthday, but, <strong>our</strong> birthday</p>
+
+        <div class="row top-40">
+          <div class="col-sm-4">
+            <a href="/">
+              <div class="registry-btn">
+                <span class="helper"></span><img src="wayfair-logo.png" class="registry-btn-img">
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="/">
+              <div class="registry-btn">
+                <span class="helper"></span><img src="macys-logo.png" class="registry-btn-img">
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="/">
+              <div class="registry-btn">
+                <span class="helper"></span><img src="C&B.png" class="registry-btn-img">
+              </div>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="section send-a-note text-center">
+      <h1 class="section-header">Send a Note</h1>
+      <p>Can't wait to tell us how excited you are about the wedding?<br>
+        We can't wait to hear it!</p>
+
+
+      <form id="gform" class="email-form text-left" action="https://script.google.com/macros/s/AKfycbwgETYX3DxNcplsvT9Z2pU_9vBCPq18F9LDiJswSKuWjbZVsI1a/exec" method="POST">
+
+        <label for="form-name">Your Name</label>
+        <input type="text" name="name" class="form-control note-field input-lg" required="required">
+
+        <label for="form-message">Your Note</label>
+        <textarea type="text" name="message" class="form-control note-field"></textarea>
+
+        <div class="text-center">
+          <input type="submit" value="Send Note" class="btn custom-btn">
+        </div>
+      </form>
+    </div>
+
+
+    <footer>
+      <div class="footer-text text-center">
+        <h2>V&C</h2>
+      </div>
+    </footer>
+
+
+
+    <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 
 </html>

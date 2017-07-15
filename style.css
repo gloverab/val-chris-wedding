@@ -85,7 +85,7 @@ h1 {
 
 .hero-section {
   top:0;
-  background: url('./VC-Kisses.png') no-repeat center center;
+  background: url('./hero-pic.png') no-repeat center center;
   height: 70%;
   background-position: center;
   background-repeat: no-repeat;
@@ -202,6 +202,7 @@ h1 {
 
 #event-details {
   margin-top: 40px;
+  margin-bottom: 200px;
 }
 
 .details-leaves {
@@ -220,24 +221,31 @@ h1 {
   text-align: center;
   margin: 0 auto;
   margin-top: -50%;
-  width: 80%;
+  width: 70%;
+  height: 281px;
   background-color: white;
-  box-shadow: 50px 50px 50px;
+  box-shadow: 5px 5px 200px #aaa;
 }
 
 .event-box p {
-  color: #7d7d7d;
+  color: #565656;
   font-size: 1.175em;
   line-height: 25px;
   margin-bottom: 30px;
 }
 
-.event-box a {
+.custom-btn {
   font-size: 1.3em;
   padding: 18px 36px;
   border-radius: 4px;
   background-color: #2E5C00;
   color: white;
+}
+
+.custom-btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #348200;
 }
 
 .event-box-header {
@@ -255,13 +263,78 @@ h1 {
 .event-box-sm-header {
   font-weight: bold;
   font-size: 1.5em;
-  margin-bottom: 20px;
 }
 
 .no-margin-bottom {
   margin-bottom: 0;
 }
 
+.event-box a#brule {
+  font-size: 1.5em;
+  color: #2E5C00;
+}
+
+/*REGISTRY STYLES*/
+
+.registry-btn {
+  background-color: transparent;
+  width: 220px;
+  height: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+
+.registry-btn-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.registry-btn:hover {
+  box-shadow: 5px 5px 200px #ccc;
+}
+
+/*CONTACT STYLES*/
+
+.email-form {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.note-field {
+  font-size: 1.75em;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  margin-bottom: 30px;
+}
+
+.email-form textarea {
+  height: 125px;
+}
+
+/*FOOTER STYLES*/
+
+footer {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  bottom: 0;
+}
+
+footer h2 {
+  margin-top: 32px;
+  display: inline-block;
+}
 
 
 @media (max-width: 767px) {
