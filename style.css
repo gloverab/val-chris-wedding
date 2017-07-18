@@ -86,6 +86,7 @@ h1 {
 .hero-section {
   background: url('./hero-pic.png') no-repeat center center;
   height: 70%;
+  min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +100,7 @@ h1 {
   left: 50%;
   width: 65%;
   height: 60%;
+  min-height: 315px;
   border: 1px solid white;
   background-color: rgba(0, 80, 10, 0.45);
   box-shadow: 0px 0px 0px 10px rgba(0, 80, 10, 0.45);
@@ -413,10 +415,6 @@ footer h2 {
     display: none;
   }
 }
-
-
-
-
 
 /*EFFECTS AND BULLSHIT!!!*/
 

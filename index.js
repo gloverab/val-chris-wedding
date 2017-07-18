@@ -33,11 +33,11 @@ function recheck() {
       if ( block_top < view_port_e ) {
         timer = setTimeout(function(){
           block.addClass('show-block');
-        },30);
+        },10);
       } else {
         timer = setTimeout(function(){
           block.removeClass('show-block');
-        },30);
+        },10);
       }
     });
 }
