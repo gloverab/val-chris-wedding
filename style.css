@@ -84,7 +84,7 @@ h1 {
 /*HERO STYLES*/
 
 .hero-section {
-  top:0;
+  /*top:0;*/
   background: url('./hero-pic.png') no-repeat center center;
   height: 70%;
   background-position: center;
@@ -351,4 +351,20 @@ footer h2 {
     color: #5c5959;
     background-color: #eeeeee;
   }
+
+  .navbar-default {
+    height: auto;
+  }
+
+  #section-one-photo {
+    margin-top: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .section-two {
+    margin-bottom: 0;
+  }
+
+
 }
