@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("a").on('click', function(event) {
+  $("nav a").on('click', function(event) {
     if (this.hash !== "10") {
       event.preventDefault();
       var hash = this.hash;
