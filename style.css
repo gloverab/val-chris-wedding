@@ -356,6 +356,12 @@ footer h2 {
     height: auto;
   }
 
+  .navbar-default .navbar-brand {
+    margin-top: 0;
+    color: #000000;
+    font-size: 1.75em;
+  }
+
   #section-one-photo {
     margin-top: 0;
     width: 100%;
