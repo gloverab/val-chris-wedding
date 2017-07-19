@@ -188,13 +188,29 @@ h1 {
 
 #finale-photo-left {
   margin-top: -18px;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 3px;
 }
 
 #finale-photo-right {
   margin-top: 30px;
   margin-left: -40px;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 9px;
+}
+
+
+
+
+#double-finale-photo-right {
+  margin-top: -18px;
+  margin-left: -40px;
+  box-shadow: 1px 1px 3px;
+}
+
+#double-finale-photo-left {
+  margin-top: 30px;
+  position: relative;
+  box-shadow: 1px 1px 3px;
+  z-index: 100;
 }
 
 
