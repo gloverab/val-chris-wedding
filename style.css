@@ -228,6 +228,10 @@ h1 {
   position: static;
 }
 
+.event-details-header-container {
+  margin-left: 70px;
+}
+
 .section-header {
   font-family: "Playfair Display", serif;
   font-size: 3.5em;
@@ -237,7 +241,7 @@ h1 {
 .event-box {
   text-align: center;
   margin: 0 auto;
-  margin-top: -50%;
+  margin-top: -40%;
   width: 70%;
   height: 281px;
   background-color: white;
