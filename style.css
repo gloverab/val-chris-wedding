@@ -171,13 +171,16 @@ h1 {
   box-shadow: 5px 5px 200px;
 }
 
+#mobile-photo {
+  display: none;
+}
 
 .section-one-photo {
   margin-top: -7%;
   margin-left: -1%;
   vertical-align: bottom;
   width: 105%;
-
+  /*transition: .4s ease;*/
 }
 
 .section-one-photo#l1 {
@@ -463,6 +466,20 @@ footer h2 {
 }
 
 @media (max-width: 991px) {
+
+  #box {
+    width: 415px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 200px;
+  }
+
+  .section-one-photo {
+    margin-left: -2%;
+    width: 109%;
+  }
+
   .event-box {
     width: 90%;
   }
@@ -506,6 +523,19 @@ footer h2 {
     margin-top: 0;
     color: #000000;
     font-size: 1.75em;
+  }
+
+  #box {
+    display: none;
+  }
+
+  #mobile-photo {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  #bundle-flowers {
+    display: none;
   }
 
   .section-one-photo {
