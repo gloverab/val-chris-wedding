@@ -45,8 +45,6 @@
     </nav>
 
 
-
-
     <div class="hero-section" id="hero-section">
       <div class="hero-box">
         <h1 class="hero-header top-35">Val & Chris</h1>
@@ -57,8 +55,6 @@
     </div>
 
 
-
-
     <div class="section section-one container" id="our-adventure">
       <div class="row">
         <div class="col-sm-5 fly" id="section-one-text">
@@ -66,7 +62,7 @@
           <p>We were both living and working in the Worcester area during the summer of 2009. Hanging out at a hookah bar downtown, surrounded by our closest friends, we met and hit it off real nice.</p>
         </div>
         <div class="col-sm-7 image-wrapper fly">
-          <img src="adventure-pic-lg.png" alt="Adorable photo of the bride and groom to-be" id="section-one-photo" />
+          <img src="adventure-pic-lg.png" class="js-tilt section-one-photo" alt="Adorable photo of the bride and groom to-be" id="section-one-photo" />
         </div>
       </div>
     </div>
@@ -88,7 +84,7 @@
     <div class="section section-three container">
       <div class="row">
         <div class="col-sm-6">
-          <img class="section-photo fly" src="house-pic.png">
+          <img class="section-photo fly js-tilt" src="house-pic.png">
         </div>
         <div class="col-sm-6 fly">
           <h2>We bought a home</h2>
@@ -106,10 +102,13 @@
           <p>Let's make it real nice!</p>
         </div>
         <div class="col-sm-6 fly">
-          <img class="section-photo" src="celebrate-pic.png">
+          <img class="section-photo js-tilt" src="celebrate-pic.png">
         </div>
       </div>
     </div>
+
+
+    <img class="background-flowers pull-left absolute-flowers fly" src="bundle.png" id="bundle-flowers" alt="super beautiful flower number one">
 
 
     <div class="finale container">
@@ -118,7 +117,7 @@
           <div class="col-sm-2">
           </div>
           <div class="col-sm-5">
-            <img class="finale-photo fly" id="finale-photo-first" src="stock-image.jpg" alt="lovely story telling!">
+            <img class="finale-photo finale-photo-first fly"src="stock-image.jpg" alt="lovely story telling!">
           </div>
           <div class="col-sm-4">
             <h1 class="adventure-header fly">Your love will be safe with me.</h1>
@@ -129,10 +128,10 @@
           <div class="col-sm-1">
           </div>
           <div class="col-sm-5">
-            <img class="finale-photo fly" id="finale-photo-left" src="stock-image.jpg" alt="more lovely story telling!">
+            <img class="finale-photo finale-photo-left fly" src="stock-image.jpg" alt="more lovely story telling!">
           </div>
           <div class="col-sm-5">
-            <img class="finale-photo fly" id="finale-photo-right" src="stock-image.jpg" alt="even more lovely story telling!">
+            <img class="finale-photo finale-photo-right fly" src="stock-image.jpg" alt="even more lovely story telling!">
           </div>
         </div>
       </div>
@@ -173,6 +172,9 @@
         </div>
       </div>
     </div>
+
+
+    <img class="background-flowers pull-left absolute-flowers fly" src="leaves-4.png" id="leaves-4" alt="super beautiful flower number one">
 
 
 
@@ -234,10 +236,15 @@
         </div>
     </div>
 
+
+    <img class="background-flowers pull-left absolute-flowers" src="flower-2.png" id="flower-2" alt="super beautiful flower number one">
+
+
     <div id="note" class="section send-a-note text-center">
       <h1 class="section-header">Send a Note</h1>
       <p id="note-blurb">Can't wait to tell us how excited you are about the wedding?<br>
         We can't wait to hear it!</p>
+        <img class="background-flowers pull-right absolute-flowers" src="leaves-3.png" id="leaves-3" alt="super beautiful flower number one">
 
 
       <form id="gform" class="email-form text-left" action="https://script.google.com/macros/s/AKfycbwgETYX3DxNcplsvT9Z2pU_9vBCPq18F9LDiJswSKuWjbZVsI1a/exec" method="POST">
@@ -255,7 +262,10 @@
       <div style="display:none;" id="thankyou_message">
         <p class="section-header">Thanks for sending! We can't wait to see what you wrote. We're sure it's real nice. :)</p>
       </div>
+
     </div>
+
+
 
 
     <footer>
@@ -264,9 +274,7 @@
       </div>
     </footer>
 
-
-
-<script src="tiltfx.js"></script>
+  <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
   </body>
 
 </html>

@@ -13,17 +13,52 @@ $(document).ready(function(){
     }
   });
 
-  var movementStrength = 25;
-  var height = movementStrength / $(window).height();
-  var width = movementStrength / $(window).width();
-  $("#hero-section").mousemove(function(e){
-      var pageX = e.pageX - ($(window).width() / 2);
-      var pageY = e.pageY - ($(window).height() / 2);
-      var newvalueX = width * pageX * -1 - 25;
-      var newvalueY = height * pageY * -1 - 50;
-      $('#hero-section').css("background-position", newvalueX+"px     "+newvalueY+"px");
-  });
+  $('.js-tilt').tilt({
+      glare: true,
+      perspective: 0,
+      scale: 1.01
+  })
 });
+
+
+
+
+
+window.onload = function () {
+
+	var parallaxBox = document.getElementById ( 'box' );
+	var c1left = document.getElementById ( 'l1' ).offsetLeft,
+	c1top = document.getElementById ( 'l1' ).offsetTop,
+	c2left = document.getElementById ( 'l2' ).offsetLeft,
+	c2top = document.getElementById ( 'l2' ).offsetTop,
+	c3left = document.getElementById ( 'l3' ).offsetLeft,
+	c3top = document.getElementById ( 'l3' ).offsetTop,
+	c4left = document.getElementById ( 'l4' ).offsetLeft,
+	c4top = document.getElementById ( 'l4' ).offsetTop;
+
+	parallaxBox.onmousemove = function ( event ) {
+		event = event || window.event;
+		var x = event.clientX - parallaxBox.offsetLeft,
+		y = event.clientY - parallaxBox.offsetTop;
+
+		mouseParallax ( 'l1', c1left, c1top, x, y, 5 );
+		mouseParallax ( 'l2', c2left, c2top, x, y, 15 );
+		mouseParallax ( 'l3', c3left, c3top, x, y, 30 );
+		mouseParallax ( 'l4', c4left, c4top, x, y, 65 );
+	}
+
+}
+
+function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
+	var obj = document.getElementById ( id );
+	var parentObj = obj.parentNode,
+	containerWidth = parseInt( parentObj.offsetWidth ),
+	containerHeight = parseInt( parentObj.offsetHeight );
+	obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+	obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
+}
+
+
 
 
 // FLYING ANIMATION JS

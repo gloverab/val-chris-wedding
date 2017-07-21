@@ -11,6 +11,10 @@ h1 {
   font-weight: lighter;
 }
 
+.js-tilt {
+  transform-style: preserve-3d;
+}
+
 .navbar-default {
   background-color: #ffffff;
   border-color: #eeeeee;
@@ -191,12 +195,12 @@ h1 {
   font-style: italic;
 }
 
-#finale-photo-left {
+img.finale-photo-left {
   margin-top: -18px;
   /*box-shadow: 1px 1px 3px;*/
 }
 
-#finale-photo-right {
+img.finale-photo-right {
   margin-top: 30px;
   margin-left: -40px;
   /*box-shadow: 1px 1px 9px;*/
@@ -268,12 +272,34 @@ h1 {
   margin-bottom: 30px;
 }
 
+.absolute-flowers {
+  position: absolute;
+  z-index: -1;
+}
+
 #event-box-right {
   margin-left: -1px;
 }
 
 #event-box-left {
   margin-left: 80px;
+}
+
+#bundle-flowers {
+  margin-top: -40px;
+  width: 15%;
+}
+
+#leaves-4 {
+  width: 15%;
+}
+
+#flower-2 {
+  width: 20%;
+}
+
+#leaves-3 {
+  right: 0;
 }
 
 .custom-btn {
@@ -471,16 +497,16 @@ footer h2 {
     margin-top: 0;
   }
 
-  #finale-photo-first {
+  img.finale-photo-first {
     display: none;
   }
 
-  #finale-photo-left {
+  img.finale-photo-left {
     margin-top: 50px;
     box-shadow: 1px 1px 1px;
   }
 
-  #finale-photo-right {
+  img.finale-photo-right {
     margin-top: 30px;
     margin-left: 0;
     box-shadow: 1px 1px 1px;
