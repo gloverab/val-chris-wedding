@@ -7,16 +7,12 @@ $(document).ready(function(){
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 200, function(){
+      }, 550, function(){
         window.location.hash = hash;
       });
     }
   });
 });
-
-
-
-
 
 
 // FLYING ANIMATION JS

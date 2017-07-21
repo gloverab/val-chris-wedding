@@ -77,6 +77,7 @@ h1 {
 }
 
 .top-30 { margin-top:30px }
+.top-35 { margin-top:35px }
 .top-40 { margin-top:40px }
 .top-80 { margin-top:80px }
 
@@ -102,8 +103,8 @@ h1 {
   height: 60%;
   min-height: 315px;
   border: 1px solid white;
-  background-color: rgba(0, 80, 10, 0.45);
-  box-shadow: 0px 0px 0px 10px rgba(0, 80, 10, 0.45);
+  background-color: rgba(46, 92, 10, 0.5);
+  box-shadow: 0px 0px 0px 10px rgba(46, 92, 10, 0.5);
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -111,10 +112,13 @@ h1 {
 .hero-header {
   font-family: "Playfair Display", serif;
   font-size: 4.75em;
+  margin-bottom: 0;
 }
 
 .hero-branch {
   height: 40px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .hero-section h3, .hero-section h4 {
@@ -188,13 +192,13 @@ h1 {
 
 #finale-photo-left {
   margin-top: -18px;
-  box-shadow: 1px 1px 3px;
+  /*box-shadow: 1px 1px 3px;*/
 }
 
 #finale-photo-right {
   margin-top: 30px;
   margin-left: -40px;
-  box-shadow: 1px 1px 9px;
+  /*box-shadow: 1px 1px 9px;*/
 }
 
 
@@ -203,13 +207,13 @@ h1 {
 #double-finale-photo-right {
   margin-top: -18px;
   margin-left: -40px;
-  box-shadow: 1px 1px 3px;
+  /*box-shadow: 1px 1px 3px;*/
 }
 
 #double-finale-photo-left {
   margin-top: 30px;
   position: relative;
-  box-shadow: 1px 1px 3px;
+  /*box-shadow: 1px 1px 3px;*/
   z-index: 100;
 }
 
@@ -222,6 +226,12 @@ h1 {
   margin-bottom: 200px;
 }
 
+.details-p {
+  font-family: "lato";
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
 .details-leaves {
   width: 40%;
   right: 0;
@@ -229,7 +239,7 @@ h1 {
 }
 
 .event-details-header-container {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .section-header {
@@ -239,13 +249,15 @@ h1 {
 }
 
 .event-box {
+  font-family: "Lato", serif;
   text-align: center;
   margin: 0 auto;
   margin-top: -40%;
   width: 70%;
   height: 281px;
   background-color: white;
-  box-shadow: 5px 5px 200px #aaa;
+  box-shadow: 4px 4px 80px rgba(0,0,0,.15);
+  z-index: 2;
 }
 
 .event-box p {
@@ -255,18 +267,27 @@ h1 {
   margin-bottom: 30px;
 }
 
+#event-box-right {
+  margin-left: -1px;
+}
+
+#event-box-left {
+  margin-left: 80px;
+}
+
 .custom-btn {
   font-size: 1.3em;
   padding: 18px 36px;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #2E5C00;
   color: white;
+  transition: 0.4s ease;
 }
 
 .custom-btn:hover {
   text-decoration: none;
   color: white;
-  background-color: #348200;
+  background-color: #3e7c00;
 }
 
 .event-box-header {
@@ -291,8 +312,16 @@ h1 {
 }
 
 .event-box a#brule {
-  font-size: 1.5em;
+  font-size: 1.35em;
   color: #2E5C00;
+  transition: 0.2s ease;
+}
+
+.event-box a#brule:hover {
+  text-decoration: none;
+  padding: 10px 10px;
+  background-color: #EEF9EB;
+  border-radius: 5px;
 }
 
 /*REGISTRY STYLES*/
@@ -318,10 +347,19 @@ h1 {
 }
 
 .registry-btn:hover {
-  box-shadow: 5px 5px 200px #ccc;
+  box-shadow: 5px 5px 110px rgba(0,0,0,0.15);
 }
 
 /*CONTACT STYLES*/
+
+#note {
+  font-family: "Lato";
+  margin-bottom: 80px;
+}
+
+#gform {
+  margin-top: 40px;
+}
 
 .email-form {
   margin: 0 auto;
@@ -329,11 +367,22 @@ h1 {
 }
 
 .note-field {
-  font-size: 1.75em;
+  font-size: 1.4em;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   box-shadow: none;
   margin-bottom: 30px;
+  transition: 0.4s ease;
+}
+
+*:focus {
+    outline: none;
+}
+
+.note-field:focus {
+  box-shadow: none;
+  background-color: white;
+  border: 1px solid #5A9653;
 }
 
 .email-form textarea {
@@ -355,6 +404,26 @@ footer {
 footer h2 {
   margin-top: 32px;
   display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .event-box {
+    width: 90%;
+  }
+
+  .event-details-header-container {
+    margin-left: 0;
+  }
+
+  #event-box-left {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 870px) {
+  .event-box {
+    margin-top: -20%;
+  }
 }
 
 
