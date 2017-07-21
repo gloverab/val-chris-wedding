@@ -80,6 +80,8 @@ h1 {
   margin: 0 auto;
 }
 
+.img-container { position: relative; }
+
 .top-30 { margin-top:30px }
 .top-35 { margin-top:35px }
 .top-40 { margin-top:40px }
@@ -161,10 +163,37 @@ h1 {
 
 /*SECTION ONE STYLES*/
 
-#section-one-photo {
-  margin-top: -50px;
-  width: 100%;
+#box {
+  width: 535px;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
   box-shadow: 5px 5px 200px;
+}
+
+
+.section-one-photo {
+  margin-top: -7%;
+  margin-left: -1%;
+  vertical-align: bottom;
+  width: 105%;
+
+}
+
+.section-one-photo#l1 {
+  z-index: 1;
+}
+
+.section-one-photo#l2 {
+  z-index: 2;
+}
+
+.section-one-photo#l3 {
+  z-index: 3;
+}
+
+.section-one-photo#l4 {
+  z-index: 4;
 }
 
 #section-one-text {
@@ -479,7 +508,7 @@ footer h2 {
     font-size: 1.75em;
   }
 
-  #section-one-photo {
+  .section-one-photo {
     margin-top: 0;
     width: 100%;
     box-shadow: none;

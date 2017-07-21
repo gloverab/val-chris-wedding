@@ -12,22 +12,14 @@ $(document).ready(function(){
       });
     }
   });
-
-  $('.js-tilt').tilt({
-      glare: true,
-      perspective: 0,
-      scale: 1.01
-  })
 });
-
-
-
 
 
 window.onload = function () {
 
 	var parallaxBox = document.getElementById ( 'box' );
-	var c1left = document.getElementById ( 'l1' ).offsetLeft,
+	var
+  c1left = document.getElementById ( 'l1' ).offsetLeft,
 	c1top = document.getElementById ( 'l1' ).offsetTop,
 	c2left = document.getElementById ( 'l2' ).offsetLeft,
 	c2top = document.getElementById ( 'l2' ).offsetTop,
@@ -38,13 +30,14 @@ window.onload = function () {
 
 	parallaxBox.onmousemove = function ( event ) {
 		event = event || window.event;
-		var x = event.clientX - parallaxBox.offsetLeft,
-		y = event.clientY - parallaxBox.offsetTop;
+
+		var x = event.offsetX - parallaxBox.offsetLeft,
+		y = event.offsetY - parallaxBox.offsetTop;
 
 		mouseParallax ( 'l1', c1left, c1top, x, y, 5 );
-		mouseParallax ( 'l2', c2left, c2top, x, y, 15 );
-		mouseParallax ( 'l3', c3left, c3top, x, y, 30 );
-		mouseParallax ( 'l4', c4left, c4top, x, y, 65 );
+		mouseParallax ( 'l2', c2left, c2top, x, y, 18 );
+		mouseParallax ( 'l3', c3left, c3top, x, y, 22 );
+		mouseParallax ( 'l4', c4left, c4top, x, y, 45 );
 	}
 
 }
