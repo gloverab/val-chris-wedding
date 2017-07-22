@@ -108,6 +108,8 @@ function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
 }
+
+
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
@@ -152,15 +154,22 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   var data = getFormData();
   var url = event.target.action;  //
   var xhr = new XMLHttpRequest();
+  $('#body').addClass('loading')
+  $('#loader').addClass('loader')
   xhr.open('POST', url);
   // xhr.withCredentials = true;
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
   xhr.onreadystatechange = function() {
       console.log( xhr.status, xhr.statusText )
       console.log(xhr.responseText);
       document.getElementById('gform').style.display = 'none'; // hide form
       document.getElementById('note-blurb').style.display = 'none';
       document.getElementById('thankyou_message').style.display = 'block';
+      document.getElementById('flower-2').style.display = 'none'
+      document.getElementById('leaves-3').style.display = 'none'
+      $('#body').removeClass('loading')
+      $('#loader').removeClass('loader')
       return;
   };
   // url encode form data for sending as post data
