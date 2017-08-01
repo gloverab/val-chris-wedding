@@ -82,6 +82,7 @@ h1 {
 
 .img-container { position: relative; }
 
+.top-20 { margin-top: 20px }
 .top-30 { margin-top:30px }
 .top-35 { margin-top:35px }
 .top-40 { margin-top:40px }
@@ -92,7 +93,7 @@ h1 {
 
 .hero-section {
   margin: 0 auto;
-  background: url('./hero-pic.png') no-repeat center center;
+  background: url('./images/hero-img.png') no-repeat center center;
   height: 70%;
   min-height: 500px;
   background-position: center;
@@ -362,6 +363,10 @@ img.finale-photo-right {
   margin-bottom: 40px;
 }
 
+#less-event-box-header {
+  margin-bottom: 25px;
+}
+
 .event-box-sm-header {
   font-weight: bold;
   font-size: 1.5em;
@@ -384,6 +389,30 @@ img.finale-photo-right {
   border-radius: 5px;
 }
 
+.event-box a#phone {
+  font-weight: 700;
+  font-size: 1.35em;
+  color: #2E5C00;
+  transition: 0.2s ease;
+}
+
+.event-box h5 {
+  margin-bottom: 5px;
+}
+
+.event-box a#phone:hover {
+  text-decoration: none;
+}
+
+#less-event-box-p {
+  margin-bottom: 20px;
+}
+
+#twenty-percent {
+  padding-left:
+  margin-top: 15px;
+}
+
 /*REGISTRY STYLES*/
 
 .registry-btn {
@@ -393,6 +422,7 @@ img.finale-photo-right {
   display: inline-block;
   vertical-align: middle;
   transition: 0.3s ease;
+  opacity: 0.3;
 }
 
 .registry-btn-img {
@@ -406,9 +436,9 @@ img.finale-photo-right {
     vertical-align: middle;
 }
 
-.registry-btn:hover {
+/*.registry-btn:hover {
   box-shadow: 5px 5px 110px rgba(0,0,0,0.15);
-}
+}*/
 
 /*CONTACT STYLES*/
 
@@ -608,7 +638,7 @@ footer h2 {
 
 .fly {
   opacity: 0;
-  transition: all 600ms ease-in-out;
+  transition: all 400ms ease-in-out;
   transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
 }
 
