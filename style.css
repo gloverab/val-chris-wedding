@@ -303,6 +303,9 @@ img.finale-photo-right {
   color: #565656;
   font-size: 1.175em;
   line-height: 25px;
+}
+
+.event-box .address {
   margin-bottom: 30px;
 }
 
@@ -352,18 +355,6 @@ img.finale-photo-right {
   background-color: #3e7c00;
 }
 
-.custom-btn-wrapper:after {
-  content: '';
-  background: red;
-  display: block;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
 .event-box-header {
   font-family: "Playfair Display";
   font-style: italic;
@@ -403,14 +394,10 @@ img.finale-photo-right {
 }
 
 .event-box a#phone {
-  font-weight: 700;
-  font-size: 1.35em;
-  color: #2E5C00;
+  font-weight: 500;
+  font-size: 1em;
+  color: #565656;
   transition: 0.2s ease;
-}
-
-.event-box h5 {
-  margin-bottom: 5px;
 }
 
 .event-box a#phone:hover {
