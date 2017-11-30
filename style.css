@@ -343,7 +343,9 @@ img.finale-photo-right {
   font-size: 1.3em;
   padding: 18px 36px;
   border-radius: 5px;
-  background-color: #2E5C00;
+  background-image: linear-gradient(to right, #2E5C00 48%, #3e7c00 52%);
+  background-position: right;
+  background-size: 205% 100%;
   color: white;
   transition: 0.4s ease;
   width: 170px;
@@ -353,6 +355,7 @@ img.finale-photo-right {
   text-decoration: none;
   color: white;
   background-color: #3e7c00;
+  background-position: left;
 }
 
 .event-box-header {
