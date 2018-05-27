@@ -496,6 +496,24 @@ footer h2 {
   display: inline-block;
 }
 
+@media (max-width: 1290px) {
+  .event-box {
+    margin-top: -30%;
+  }
+}
+
+@media (max-width: 1159px) {
+  .event-box {
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 995px) {
+  .event-box {
+    margin-top: -5%;
+  }
+}
+
 @media (max-width: 991px) {
 
   #box {
@@ -526,7 +544,7 @@ footer h2 {
 
 @media (max-width: 870px) {
   .event-box {
-    margin-top: -20%;
+    /* margin-top: -20%; */
   }
 }
 
