@@ -93,7 +93,7 @@ h1 {
 
 .hero-section {
   margin: 0 auto;
-  background: url('./images/hero-img.png') no-repeat center center;
+  background: url('./images/hero-img-new.png') no-repeat center center;
   height: 70%;
   min-height: 500px;
   background-position: center;
@@ -303,6 +303,9 @@ img.finale-photo-right {
   color: #565656;
   font-size: 1.175em;
   line-height: 25px;
+}
+
+.event-box .address {
   margin-bottom: 30px;
 }
 
@@ -340,15 +343,19 @@ img.finale-photo-right {
   font-size: 1.3em;
   padding: 18px 36px;
   border-radius: 5px;
-  background-color: #2E5C00;
+  background-image: linear-gradient(to right, #2E5C00 48%, #3e7c00 52%);
+  background-position: right;
+  background-size: 205% 100%;
   color: white;
   transition: 0.4s ease;
+  width: 170px;
 }
 
 .custom-btn:hover {
   text-decoration: none;
   color: white;
   background-color: #3e7c00;
+  background-position: left;
 }
 
 .event-box-header {
@@ -390,14 +397,10 @@ img.finale-photo-right {
 }
 
 .event-box a#phone {
-  font-weight: 700;
-  font-size: 1.35em;
-  color: #2E5C00;
+  font-weight: 500;
+  font-size: 1em;
+  color: #565656;
   transition: 0.2s ease;
-}
-
-.event-box h5 {
-  margin-bottom: 5px;
 }
 
 .event-box a#phone:hover {
@@ -422,7 +425,6 @@ img.finale-photo-right {
   display: inline-block;
   vertical-align: middle;
   transition: 0.3s ease;
-  opacity: 0.3;
 }
 
 .registry-btn-img {
@@ -436,9 +438,9 @@ img.finale-photo-right {
     vertical-align: middle;
 }
 
-/*.registry-btn:hover {
+.registry-btn:hover {
   box-shadow: 5px 5px 110px rgba(0,0,0,0.15);
-}*/
+}
 
 /*CONTACT STYLES*/
 
